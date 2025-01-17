@@ -1,0 +1,25 @@
+  498  mkdir -p ~/git/test
+  499  cd ~/git/test
+  500  git clone git@github.com:kitizh/0_git_basics.git
+  501  nano backup.sh
+  502  git status
+  503  cd 0_git_basics
+  504  ls
+  505  nano backup.sh
+  506  git status
+  507  git add backup.sh
+  508  git commit -m "add backup.sh"
+  509  git push origin master
+  510  nano backup.sh
+  511  git add backup.sh
+  512  git commit -m "add new comment to backup.sh"
+  513  git push origin master
+  514  nano backup.sh
+  515  git add backup.sh
+  516  git commit -m "add new line backup.sh"
+  517  git push origin master
+  518  git log
+  519  git reset --hard 9a32a69f1c79fe3b82766258bd3d1450ebc7bdac
+  520  git push origin master --force
+  521  git log
+  522  ls

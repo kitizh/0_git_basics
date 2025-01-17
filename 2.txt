@@ -1,0 +1,72 @@
+  176  mkdir 0_1
+  177  cd 0_1
+  178  git init
+  179  git status
+  180  touch main.py
+  181  git status
+  182  git add main.py
+  183  git status
+  184  git commit -m "Init"
+  185  open .
+  186  cat main.py
+  187  python3 main.py
+  188  cat main.py
+  189  python3 main.py
+  190  git status
+  191  git add main.py
+  192  git commit -m "add a + b sum code"
+  193  python3 main.py
+  194  git add main.py
+  195  git commit -m "add output messages"
+  196  git log
+  197  git config --global alias.cm 'commit -am'
+  198  touch some_file.py
+  199  echo 'print("Hello!")' > some_file.py
+  200  touch another_file.py
+  201  open another_file.py
+  202  python3 another_file.py
+  203  git status
+  204  python3 some_file.py
+  205  python3 another_file.py
+  206  git cm "add two new code files for fun"
+  207  git config --global alias.cm 'commit -am'
+  208  git cm "add two new code files for fun"
+  209  nano ~/.gitconfig
+  210  git config --global alias.cm 'commit -a -m'
+  211  git status
+  212  git cm "add two new code files for fun"
+  213  git add .
+  214  git status
+  215  git cm "add two new code files for fun"
+  278  python3 -m venv venv
+  279  echo 'venv/' > .gitignore
+  280  ls
+  281  git status
+  282  git branch new
+  283  git checkout new
+  284  git branch
+  285  ls
+  286  nano another_file.py
+  287  nano some_file.py
+  288  git checkout master
+  289  ls
+  290  nano some_file.py
+  291  git status
+  292  git add .
+  293  git commit -m "some_file.py new output"
+  294  nano some_file.py
+  295  git checkout new
+  296  nano some_file.py
+  297  git status
+  298  git add some_file.py
+  299  git commit -m "output for some_file"
+  300  git checkout master
+  301  git merge new
+  302  nano some_file.py
+  303  git merge new
+  304  git status
+  305  git add some_file.py
+  306  git commit -m "resolve merge conflict in some_file.py"
+  307  git merge new
+  308  git log --oneline --graph --all
+  309  git branch -d new
